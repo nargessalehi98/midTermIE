@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mr. or Ms.?</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="transbox" style="clear: both">
+        <h1 id="main" style="float: left"><small>Mr or Ms?</small></h1>
+        <h1 id="main1" style="float: right"><small>Prediction:</small></h1>
+        <form action="/action_page.php">
+            <label for="textarea"></label>
+            <textarea id="textarea" name="tarea" rows="1" cols="15"></textarea>
+            <output id="output" name="result" style="float: right" for="a b">male</output>
+            <br><input type="radio" id="male">
+            <label for="male">male</label>
+            <output id="output1" name="result" style="float: right" for="a b">0.88</output>
+            <br><input type="radio" id="female">
+            <label for="female">female</label>
+            <br>
+            <h1 id="main2" style="float: right"><small>Saved Answer:</small></h1>
+            <br><input id="button" type="submit" value="Submit">
+            <br><input id="save" type="submit" value="  save  ">
+            <input id="clear"  type="submit" value="claer"></form>
+        </form>
+    </div>
+</div>
+</body>
+<!--<script src="main.js"></script>-->
+</html>
