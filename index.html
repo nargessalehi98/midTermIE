@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
     <title>Mr. or Ms.?</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -9,23 +12,25 @@
     <div class="transbox" style="clear: both">
         <h1 id="main" style="float: left"><small>Mr or Ms?</small></h1>
         <h1 id="main1" style="float: right"><small>Prediction:</small></h1>
-        <form action="/action_page.php">
-            <label for="textarea"></label>
+        <form class="form">
             <textarea id="textarea" name="tarea" rows="1" cols="15"></textarea>
-            <output id="output" name="result" style="float: right" for="a b">male</output>
-            <br><input type="radio" id="male">
+            <output id="output"  style="float: right" ></output>
+            <br><input name="gender" type="radio" id="male"  value="male">
             <label for="male">male</label>
-            <output id="output1" name="result" style="float: right" for="a b">0.88</output>
-            <br><input type="radio" id="female">
+
+            <output id="output1"  style="float: right" ></output>
+            <br><input name="gender" type="radio" id="female" value="female">
             <label for="female">female</label>
-            <br>
-            <h1 id="main2" style="float: right"><small>Saved Answer:</small></h1>
-            <br><input id="button" type="submit" value="Submit">
-            <br><input id="save" type="submit" value="  save  ">
-            <input id="clear"  type="submit" value="claer"></form>
+
+            <br><h3  style="float: right"><small>Saved Answer:</small><p id="saveoutput" style="float: right"></p></h3>
+            <br><input id="button" type="button" value="Submit" onclick="Prediction()">
+            <br><input id="save" type="button" value="  save  " onclick="saveName()">
+            <input id="clear"  type="button" value="claer" onclick="clearStorage()">
         </form>
     </div>
 </div>
 </body>
-<!--<script src="main.js"></script>-->
+
 </html>
+
+<script src="main.js"></script>
